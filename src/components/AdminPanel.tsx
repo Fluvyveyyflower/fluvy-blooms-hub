@@ -252,21 +252,6 @@ const AdminPanel = ({ isAuthenticated, onLogin, onLogout }: AdminPanelProps) => 
           </Card>
         )}
 
-        {/* Product List with Admin Controls */}
-        <Card>
-          <CardHeader>
-            <CardTitle>Current Products</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground mb-4">
-              Manage your product inventory. You can edit product details, update stock status, and delete products.
-            </p>
-            <div className="text-center py-8 text-muted-foreground">
-              <p>Product list with edit/delete controls will be displayed here when integrated with the ProductsSection component.</p>
-              <p className="text-xs mt-2">The ProductsSection component already has admin functionality built-in.</p>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );

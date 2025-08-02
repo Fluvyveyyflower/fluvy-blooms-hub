@@ -1,15 +1,38 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Instagram } from "lucide-react";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isAdminPage = location.pathname === '/admin';
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    // If on admin page, navigate to home first
+    if (isAdminPage) {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setIsMenuOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    if (isAdminPage) {
+      navigate('/');
+    } else {
+      scrollToSection('home');
     }
   };
 
@@ -17,13 +40,13 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
+          {/* Logo - clickable */}
+          <button onClick={handleLogoClick} className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">F</span>
             </div>
             <span className="text-xl font-bold text-foreground">FluvyveyyFlowers</span>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -78,7 +101,7 @@ const Header = () => {
               <Instagram className="w-5 h-5" />
             </a>
             <Button
-              onClick={() => scrollToSection('admin')}
+              onClick={() => navigate('/admin')}
               variant="outline"
               size="sm"
             >
@@ -148,7 +171,7 @@ const Header = () => {
                 </a>
               </div>
               <Button
-                onClick={() => scrollToSection('admin')}
+                onClick={() => navigate('/admin')}
                 variant="outline"
                 className="w-fit"
               >
