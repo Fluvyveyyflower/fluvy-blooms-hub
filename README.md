@@ -1,48 +1,53 @@
-# 🌸 FluvyveyyFlowers  
+# 🌸 **FluvyveyyFlowers**  
 
-**FluvyveyyFlowers** adalah aplikasi toko bunga online yang dibuat menggunakan **React + TypeScript**, **Vite**, dan **Tailwind CSS**. Proyek ini mendukung **dashboard admin**, **list produk dari Firestore**, serta integrasi Google Maps untuk lokasi toko.  
+<p align="center">
+  <img src="public/Logofluvyveyy.png" alt="FluvyveyyFlowers Logo" width="200" />
+</p>
 
-![Logo](public/Logofluvyveyy.png)  
+<p align="center">
+  <b>Aplikasi Toko Bunga Online dengan Dashboard Admin & Integrasi Firebase</b>  
+</p>
 
-## 🚀 Fitur Utama  
-
-- 🌐 **Landing Page** elegan dengan UI modern.  
-- 🛒 **Katalog Produk** terintegrasi dengan Firebase Firestore.  
-- 🔐 **Halaman Login Admin** (Firebase Auth).  
-- 🛠️ **Dashboard Admin** untuk mengelola produk.  
-- 🗺️ **Integrasi Google Maps** untuk menampilkan lokasi toko.  
-- 📱 **Desain Responsif** dengan Tailwind CSS + shadcn-ui.  
-
----
-
-## 🛠️ Teknologi yang Digunakan  
-
-- **[React](https://react.dev/)** + **[Vite](https://vitejs.dev/)**  
-- **[TypeScript](https://www.typescriptlang.org/)**  
-- **[Tailwind CSS](https://tailwindcss.com/)** + **[shadcn-ui](https://ui.shadcn.com/)**  
-- **[Firebase](https://firebase.google.com/)** (Auth, Firestore, Storage)  
-- **Google Maps Embed API**  
+<p align="center">
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.0+-61dafb?style=for-the-badge&logo=react&logoColor=white" /></a>
+  <a href="https://vitejs.dev/"><img src="https://img.shields.io/badge/Vite-4.0+-646CFF?style=for-the-badge&logo=vite&logoColor=white" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/TailwindCSS-3.0+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /></a>
+  <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-Auth%20%7C%20Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" /></a>
+</p>
 
 ---
 
-## 📂 Struktur Proyek  
+## 🚀 **Fitur Utama**
 
-```bash
-fluvyveyyflowers/
-├── public/
-│   ├── logoFluvyveyy.png         # Logo aplikasi
-│   └── index.html                # Template HTML utama
-├── src/
-│   ├── components/               # Reusable components
-│   ├── pages/                    # Halaman utama (Home, Admin, Dashboard)
-│   ├── assets/                   # Gambar / icon tambahan
-│   ├── styles/                   # File CSS global
-│   ├── main.tsx                  # Entry point React
-│   └── firebase.ts               # Konfigurasi Firebase
-├── package.json
-├── tailwind.config.js
-└── README.md
-```
+- 🌐 **Landing Page** elegan dengan animasi modern dan interaktif  
+- 🛒 **Katalog Produk** terhubung langsung dengan **Firebase Firestore**  
+- 🔐 **Halaman Login Admin** menggunakan Firebase Authentication  
+- 🛠️ **Dashboard Admin** dengan fitur CRUD produk yang powerful  
+- 🗺️ **Integrasi Google Maps** untuk menampilkan lokasi toko secara real-time  
+- 📱 **Desain Responsif** menggunakan **Tailwind CSS** dan **shadcn-ui**  
+
+---
+
+## 🖼️ **Preview Aplikasi**
+
+### 🏠 Halaman Utama
+![Preview Home](public/preview-home.png)
+
+### 🔑 Login Admin
+![Preview Admin Login](public/preview-admin.png)
+
+### 📊 Dashboard Admin
+![Preview Dashboard](public/preview-dashboard.png)
+
+---
+
+## 🛠️ **Teknologi yang Digunakan**
+
+- ⚛️ **[React](https://react.dev/)** (v18+) + **[Vite](https://vitejs.dev/)** (Build super cepat)
+- 💎 **[TypeScript](https://www.typescriptlang.org/)** untuk code yang lebih aman
+- 🎨 **[Tailwind CSS](https://tailwindcss.com/)** + **[shadcn-ui](https://ui.shadcn.com/)** untuk UI responsif & konsisten
+- 🔥 **[Firebase](https://firebase.google.com/)**: Authentication, Firestore Database & Storage
+- 🌍 **Google Maps Embed API** untuk menampilkan lokasi toko  
 
 ---
 ## Cara Install
