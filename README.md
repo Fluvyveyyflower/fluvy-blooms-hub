@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# 🌸 FluvyveyyFlowers  
 
-## Project info
+**FluvyveyyFlowers** adalah aplikasi toko bunga online yang dibuat menggunakan **React + TypeScript**, **Vite**, dan **Tailwind CSS**. Proyek ini mendukung **dashboard admin**, **list produk dari Firestore**, serta integrasi Google Maps untuk lokasi toko.  
 
-**URL**: https://lovable.dev/projects/f0870c82-36e7-49ab-8741-50ea7ee49b24
+![Logo](public/Logofluvyveyy.png)  
 
-## How can I edit this code?
+## 🚀 Fitur Utama  
 
-There are several ways of editing your application.
+- 🌐 **Landing Page** elegan dengan UI modern.  
+- 🛒 **Katalog Produk** terintegrasi dengan Firebase Firestore.  
+- 🔐 **Halaman Login Admin** (Firebase Auth).  
+- 🛠️ **Dashboard Admin** untuk mengelola produk.  
+- 🗺️ **Integrasi Google Maps** untuk menampilkan lokasi toko.  
+- 📱 **Desain Responsif** dengan Tailwind CSS + shadcn-ui.  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f0870c82-36e7-49ab-8741-50ea7ee49b24) and start prompting.
+## 🛠️ Teknologi yang Digunakan  
 
-Changes made via Lovable will be committed automatically to this repo.
+- **[React](https://react.dev/)** + **[Vite](https://vitejs.dev/)**  
+- **[TypeScript](https://www.typescriptlang.org/)**  
+- **[Tailwind CSS](https://tailwindcss.com/)** + **[shadcn-ui](https://ui.shadcn.com/)**  
+- **[Firebase](https://firebase.google.com/)** (Auth, Firestore, Storage)  
+- **Google Maps Embed API**  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📂 Struktur Proyek  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+fluvyveyyflowers/
+├── public/
+│   ├── logoFluvyveyy.png         # Logo aplikasi
+│   └── index.html                # Template HTML utama
+├── src/
+│   ├── components/               # Reusable components
+│   ├── pages/                    # Halaman utama (Home, Admin, Dashboard)
+│   ├── assets/                   # Gambar / icon tambahan
+│   ├── styles/                   # File CSS global
+│   ├── main.tsx                  # Entry point React
+│   └── firebase.ts               # Konfigurasi Firebase
+├── package.json
+├── tailwind.config.js
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+---
+## Cara Install
+```bash
+# 1. Clone repository
+git clone <YOUR_GIT_URL>
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 2. Masuk ke folder proyek
+cd fluvyveyyflowers
 
-**Use GitHub Codespaces**
+# 3. Install dependencies
+npm install
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f0870c82-36e7-49ab-8741-50ea7ee49b24) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# 4. Jalankan server development
+npm run dev
+```
