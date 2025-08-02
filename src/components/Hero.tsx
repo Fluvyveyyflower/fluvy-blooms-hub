@@ -46,7 +46,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => window.open('https://wa.me/6281234567890?text=Hello! I would like to know more about your flower arrangements.', '_blank')}
+                onClick={() => window.open('https://wa.me/62882007938488?text=Hello FluvyveyyFlowers! Saya ingin tahu lebih banyak tentang rangkaian bunga Anda.', '_blank')}
               >
                 WhatsApp Us
               </Button>
