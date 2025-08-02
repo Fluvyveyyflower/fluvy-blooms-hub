@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
 import { Badge } from "@/components/ui/badge";
-import { Plus, Package, Users, TrendingUp, DollarSign } from "lucide-react";
+import { Plus } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface Product {
@@ -100,13 +100,6 @@ const AdminPanel = ({ isAuthenticated, onLogin, onLogout }: AdminPanelProps) => 
     });
   };
 
-  // Mock stats data
-  const stats = [
-    { label: "Total Products", value: "24", icon: Package, color: "text-blue-600" },
-    { label: "Total Orders", value: "156", icon: TrendingUp, color: "text-green-600" },
-    { label: "Customers", value: "89", icon: Users, color: "text-purple-600" },
-    { label: "Revenue", value: "Rp 12.5M", icon: DollarSign, color: "text-orange-600" }
-  ];
 
   if (!isAuthenticated) {
     return (
@@ -153,24 +146,7 @@ const AdminPanel = ({ isAuthenticated, onLogin, onLogout }: AdminPanelProps) => 
           </Button>
         </div>
 
-        {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {stats.map((stat, index) => (
-            <Card key={index}>
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-muted-foreground">{stat.label}</p>
-                    <p className="text-2xl font-bold text-foreground">{stat.value}</p>
-                  </div>
-                  <stat.icon className={`w-8 h-8 ${stat.color}`} />
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Actions */}
+        {/* Product Management */}
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-xl font-semibold text-foreground">Product Management</h3>
           <Button
@@ -276,38 +252,21 @@ const AdminPanel = ({ isAuthenticated, onLogin, onLogout }: AdminPanelProps) => 
           </Card>
         )}
 
-        {/* Quick Actions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card>
-            <CardContent className="p-6">
-              <h4 className="font-semibold mb-2 text-foreground">Recent Orders</h4>
-              <p className="text-sm text-muted-foreground mb-4">View and manage customer orders</p>
-              <Button variant="outline" className="w-full">
-                View Orders
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6">
-              <h4 className="font-semibold mb-2 text-foreground">Inventory</h4>
-              <p className="text-sm text-muted-foreground mb-4">Check stock levels and manage inventory</p>
-              <Button variant="outline" className="w-full">
-                Manage Inventory
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6">
-              <h4 className="font-semibold mb-2 text-foreground">Analytics</h4>
-              <p className="text-sm text-muted-foreground mb-4">View sales reports and analytics</p>
-              <Button variant="outline" className="w-full">
-                View Reports
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
+        {/* Product List with Admin Controls */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Current Products</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground mb-4">
+              Manage your product inventory. You can edit product details, update stock status, and delete products.
+            </p>
+            <div className="text-center py-8 text-muted-foreground">
+              <p>Product list with edit/delete controls will be displayed here when integrated with the ProductsSection component.</p>
+              <p className="text-xs mt-2">The ProductsSection component already has admin functionality built-in.</p>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
