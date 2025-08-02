@@ -28,19 +28,6 @@
 
 ---
 
-## 🖼️ **Preview Aplikasi**
-
-### 🏠 Halaman Utama
-![Preview Home](public/preview-home.png)
-
-### 🔑 Login Admin
-![Preview Admin Login](public/preview-admin.png)
-
-### 📊 Dashboard Admin
-![Preview Dashboard](public/preview-dashboard.png)
-
----
-
 ## 🛠️ **Teknologi yang Digunakan**
 
 - ⚛️ **[React](https://react.dev/)** (v18+) + **[Vite](https://vitejs.dev/)** (Build super cepat)
