@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				floral: {
+					pink: 'hsl(var(--floral-pink))',
+					green: 'hsl(var(--floral-green))',
+					cream: 'hsl(var(--floral-cream))',
+					rose: 'hsl(var(--floral-rose))',
+					mint: 'hsl(var(--floral-mint))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
