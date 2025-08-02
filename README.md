@@ -54,4 +54,4 @@ npm run dev
 ```
 ---
 ## Demo Aplikasi
-https://fluvyveyyflower.vercel.app/
+https://fluvyveyyflower-m8n4kxb44-putraoktas-projects.vercel.app
