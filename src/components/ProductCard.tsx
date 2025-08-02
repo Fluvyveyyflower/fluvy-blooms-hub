@@ -26,8 +26,8 @@ const ProductCard = ({ product, onView, onEdit, onDelete, isAdmin = false }: Pro
   const [isFavorite, setIsFavorite] = useState(false);
 
   const handleWhatsAppOrder = () => {
-    const message = `Hello! I'm interested in ordering "${product.name}" - Rp ${product.price.toLocaleString()}. Can you help me with this order?`;
-    const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+    const message = `Halo FluvyveyyFlowers! Saya tertarik untuk memesan. "${product.name}" - Rp ${product.price.toLocaleString()}. Can you help me with this order?`;
+    const whatsappUrl = `https://wa.me/62882007938488?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

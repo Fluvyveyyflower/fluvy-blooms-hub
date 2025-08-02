@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Instagram } from "lucide-react";
+import logoFluvyveyy from '../assets/Logo.png';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -42,11 +43,12 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo - clickable */}
           <button onClick={handleLogoClick} className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">F</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">FluvyveyyFlowers</span>
-          </button>
+          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+            <img src={logoFluvyveyy} alt="FluvyveyyFlowers Logo" className="w-6 h-6" />
+          </div>
+          <span className="text-xl font-bold text-foreground">FluvyveyyFlowers</span>
+        </button>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -79,7 +81,7 @@ const Header = () => {
           {/* Social Links & Admin */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6288200793848"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -148,7 +150,7 @@ const Header = () => {
               </button>
               <div className="flex items-center space-x-4 pt-4">
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6288200793848"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"

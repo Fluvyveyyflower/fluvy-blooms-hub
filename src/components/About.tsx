@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: Heart,
       title: "Fresh & Quality",
-      description: "We source only the freshest flowers daily from trusted local growers to ensure the highest quality arrangements."
+      description: "Kami hanya mengambil bunga segar setiap hari dari petani lokal terpercaya untuk memastikan rangkaian bunga dengan kualitas terbaik."
     },
     {
       icon: Truck,
       title: "Fast Delivery",
-      description: "Same-day delivery available across the city. We ensure your flowers arrive fresh and on time for every occasion."
+      description: "Pengiriman di hari yang sama tersedia di seluruh kota. Kami memastikan bunga Anda tiba dalam keadaan segar dan tepat waktu untuk setiap kesempatan."
     },
     {
       icon: Shield,
       title: "Satisfaction Guarantee",
-      description: "100% satisfaction guaranteed. If you're not completely happy with your order, we'll make it right."
+      description: "Kepuasan 100% terjamin. Jika Anda tidak sepenuhnya puas dengan pesanan Anda, kami akan memperbaikinya."
     },
     {
       icon: Users,
       title: "Expert Florists",
-      description: "Our team of experienced florists create beautiful, custom arrangements for every special moment in your life."
+      description: "Tim florist kami yang berpengalaman menciptakan rangkaian bunga yang indah dan sesuai pesanan untuk setiap momen spesial dalam hidup Anda."
     }
   ];
 
@@ -33,8 +33,8 @@ const About = () => {
             About FluvyveyyFlowers
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            For over a decade, we've been creating magical moments with our exquisite flower arrangements. 
-            From intimate celebrations to grand events, we bring beauty and joy to every occasion.
+            Selama lebih dari satu dekade, kami telah menciptakan momen-momen ajaib dengan rangkaian bunga kami yang indah.
+            Dari perayaan yang intim hingga acara-acara besar, kami menghadirkan keindahan dan kegembiraan di setiap kesempatan.
           </p>
         </div>
 
@@ -44,18 +44,18 @@ const About = () => {
             <h3 className="text-3xl font-bold text-foreground">Our Story</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                FluvyveyyFlowers began as a small family business with a simple mission: to spread 
-                joy through the natural beauty of flowers. What started in a small studio has grown 
-                into a beloved local flower shop serving hundreds of happy customers.
+                FluvyveyyFlowers berawal dari bisnis keluarga kecil dengan misi sederhana: menyebarkan
+                kebahagiaan melalui keindahan alami bunga. Berawal dari sebuah studio kecil, FluvyveyyFlowers kini telah berkembang
+                menjadi toko bunga lokal yang dicintai dan melayani ratusan pelanggan yang puas.
               </p>
               <p>
-                Every arrangement we create tells a story. Whether it's celebrating love, 
-                commemorating milestones, or offering comfort during difficult times, we believe 
-                flowers have the power to speak when words fall short.
+                Setiap rangkaian bunga yang kami ciptakan menceritakan sebuah kisah. Baik itu merayakan cinta,
+                memperingati momen penting, atau memberikan penghiburan di masa sulit, kami percaya
+                bunga memiliki kekuatan untuk berbicara ketika kata-kata tak mampu mengungkapkannya.
               </p>
               <p>
-                Today, we continue to honor our founding principles of quality, creativity, and 
-                exceptional customer service while embracing modern technology to serve you better.
+                Saat ini, kami terus menjunjung tinggi prinsip dasar kami, yaitu kualitas, kreativitas, 
+                dan layanan pelanggan yang luar biasa, sembari memanfaatkan teknologi modern untuk melayani Anda dengan lebih baik.
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const About = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-floral-mint to-floral-cream rounded-3xl p-8">
               <img
-                src="https://images.unsplash.com/photo-1488048924544-c818a467dacd?w=500"
+                src="https://images.weddingku.com/images/upload/articles/images/y17gwk3vvq8t72220191345.jpg?w=800"
                 alt="Florist at work"
                 className="w-full h-80 object-cover rounded-2xl shadow-lg"
               />
@@ -95,8 +95,8 @@ const About = () => {
         <div className="mt-16 text-center bg-white/50 rounded-3xl p-8 border border-border">
           <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            "To create beautiful, meaningful flower arrangements that celebrate life's special moments 
-            and bring happiness to our community, one bouquet at a time."
+            "Untuk menciptakan rangkaian bunga yang indah dan bermakna yang merayakan momen-momen istimewa dalam hidup
+            dan membawa kebahagiaan bagi komunitas kami, satu buket pada satu waktu."
           </p>
         </div>
       </div>

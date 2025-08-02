@@ -32,7 +32,7 @@ Message: ${formData.message}
 
 I would like to discuss my flower arrangement needs. Thank you!`;
 
-    const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/62882007938488?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
 
     toast({
@@ -54,14 +54,14 @@ I would like to discuss my flower arrangement needs. Thank you!`;
     {
       icon: MapPin,
       title: "Address",
-      content: "Jl. Bunga Mawar No. 123, Jakarta 12345",
-      action: () => window.open("https://maps.google.com", "_blank")
+      content: "Jl. Ahmad Yani Gg. 2,Pesayangan, Kedungwuluh, Kec. Purwokerto Bar., Kabupaten Banyumas, Jawa Tengah 53122",
+      action: () => window.open("https://maps.app.goo.gl/2urEFZwSa4vtwBBN6", "_blank")
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+62 812-3456-7890",
-      action: () => window.open("tel:+6281234567890")
+      content: "+62 8820-0793-8488",
+      action: () => window.open("tel:+62882007938488")
     },
     {
       icon: Mail,
@@ -71,8 +71,8 @@ I would like to discuss my flower arrangement needs. Thank you!`;
     },
     {
       icon: Clock,
-      title: "Hours",
-      content: "Mon-Sat: 9AM-8PM, Sun: 10AM-6PM",
+      title: "Jam Operational",
+      content: "Senin-Jum'at: 9AM-8PM, Sabtu : 10AM-9PM, Minggu: Tutup",
       action: null
     }
   ];
@@ -81,7 +81,7 @@ I would like to discuss my flower arrangement needs. Thank you!`;
     {
       icon: MessageCircle,
       name: "WhatsApp",
-      url: "https://wa.me/6281234567890",
+      url: "https://wa.me/62882007938488",
       color: "text-green-600"
     },
     {
@@ -106,7 +106,7 @@ I would like to discuss my flower arrangement needs. Thank you!`;
             Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to order beautiful flowers? Contact us today and let's create something amazing together.
+            Siap memesan bunga-bunga indah? Hubungi kami hari ini dan mari kita ciptakan sesuatu yang luar biasa bersama.
           </p>
         </div>
 
@@ -240,14 +240,14 @@ I would like to discuss my flower arrangement needs. Thank you!`;
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button
-                  onClick={() => window.open("https://wa.me/6281234567890?text=Hello! I would like to place an order for flowers.", "_blank")}
+                  onClick={() => window.open("https://wa.me/62882007938488?text=Halo FluvyveyyFlowers! Saya ingin memesan bunga,apakah ada info lebih lanjut.", "_blank")}
                   className="w-full bg-green-600 hover:bg-green-700"
                 >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   WhatsApp Order
                 </Button>
                 <Button
-                  onClick={() => window.open("tel:+6281234567890")}
+                  onClick={() => window.open("tel:+62882007938488")}
                   variant="outline"
                   className="w-full"
                 >
@@ -260,26 +260,35 @@ I would like to discuss my flower arrangement needs. Thank you!`;
         </div>
 
         {/* Map Placeholder */}
-        <div className="mt-12">
-          <Card className="border-border">
-            <CardContent className="p-0">
-              <div className="w-full h-64 bg-muted rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-2" />
-                  <p className="text-muted-foreground">Interactive map coming soon</p>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="mt-2"
-                    onClick={() => window.open("https://maps.google.com", "_blank")}
-                  >
-                    View on Google Maps
-                  </Button>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+        <div className="relative w-full h-64 bg-muted rounded-lg overflow-hidden">
+          <iframe
+            title="FluvyveyyFlowers Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.42241579676!2d109.22926860000001!3d-7.4184141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e674291cc57%3A0x229cff0b3a1efce8!2sJl.%20Ahmad%20Yani%20Gg.%202%2C%20Pesayangan%2C%20Kedungwuluh%2C%20Kec.%20Purwokerto%20Bar.%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1754139741917!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full"
+          ></iframe>
+
+          <Button
+            variant="outline"
+            size="sm"
+            className="absolute bottom-2 right-2"
+            onClick={() =>
+              window.open(
+                "https://maps.app.goo.gl/2urEFZwSa4vtwBBN6",
+                "_blank"
+              )
+            }
+          >
+            View on Google Maps
+          </Button>
         </div>
+
+
       </div>
     </section>
   );

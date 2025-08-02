@@ -23,13 +23,13 @@ const Hero = () => {
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Beautiful Flowers for
-                <span className="block text-primary">Every Occasion</span>
+                Bunga Cantik untuk
+                <span className="block text-primary">Setiap Kesempatan</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Discover our stunning collection of fresh flowers, bouquets, and arrangements. 
-                Perfect for weddings, birthdays, anniversaries, and all life's special moments.
+                Temukan koleksi bunga segar, buket, dan rangkaian bunga kami yang memukau.
+                Sempurna untuk pernikahan, ulang tahun, hari jadi, dan semua momen spesial dalam hidup.
               </p>
             </div>
 

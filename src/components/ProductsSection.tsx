@@ -35,18 +35,18 @@ const ProductsSection = ({ isAdmin = false, onEditProduct, onDeleteProduct }: Pr
         id: "1",
         name: "Romantic Rose Bouquet",
         price: 299000,
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+        image: "https://c.pxhere.com/photos/85/d6/rose_red_red_rose_flower_blossom_bloom_rose_bloom_plant-753925.jpg!d",
         category: "Bouquet",
-        description: "Beautiful red roses arranged perfectly for romantic occasions",
+        description: "Mawar merah yang indah dirangkai sempurna untuk acara romantis",
         inStock: true
       },
       {
         id: "2",
         name: "Wedding Centerpiece",
         price: 450000,
-        image: "https://images.unsplash.com/photo-1544530286-73a4cb27eb3c?w=400",
+        image: "https://apis.xogrp.com/media-api/images/3e9c32e0-45b8-11e5-9816-22000aa61a3e?w=400",
         category: "Wedding",
-        description: "Elegant centerpiece with white lilies and greenery",
+        description: "Pusat perhatian yang elegan dengan bunga lili putih dan tanaman hijau",
         inStock: true
       },
       {
@@ -55,34 +55,34 @@ const ProductsSection = ({ isAdmin = false, onEditProduct, onDeleteProduct }: Pr
         price: 199000,
         image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400",
         category: "Birthday",
-        description: "Colorful mix of seasonal flowers perfect for celebrations",
+        description: "Campuran bunga musiman berwarna-warni yang sempurna untuk perayaan",
         inStock: false
       },
       {
         id: "4",
-        name: "Sympathy Arrangement",
+        name: "Sympathy Arrangement", 
         price: 350000,
-        image: "https://images.unsplash.com/photo-1574438858756-8d0e72f7c0b5?w=400",
+        image: "https://i.pinimg.com/originals/66/72/11/6672115dd10a9d95589f1fcfe4494c0c.jpg?w=400",
         category: "Sympathy",
-        description: "Peaceful white flowers for sympathy and remembrance",
+        description: "Bunga putih yang damai untuk simpati dan kenangan",
         inStock: true
       },
       {
         id: "5",
         name: "Graduation Bouquet",
         price: 250000,
-        image: "https://images.unsplash.com/photo-1563735530-54f6b11b8fad?w=400",
+        image: "https://www.theflowershed.com.au/wp-content/uploads/2021/05/Pink-Graduation-bouquet.jpg?w=400",
         category: "Graduation",
-        description: "Bright and cheerful flowers to celebrate achievements",
+        description: "Bunga-bunga cerah dan ceria untuk merayakan pencapaian",
         inStock: true
       },
       {
         id: "6",
         name: "Mother's Day Special",
         price: 320000,
-        image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400",
+        image: "https://img.freepik.com/premium-photo/happy-mothers-day-bouquet_1042381-2088.jpg?w=2000",
         category: "Special",
-        description: "Beautiful pink and white arrangement for mom",
+        description: "Rangkaian bunga cantik warna pink dan putih untuk ibu tercinta",
         inStock: true
       }
     ];
@@ -214,8 +214,8 @@ const ProductsSection = ({ isAdmin = false, onEditProduct, onDeleteProduct }: Pr
                 <div className="flex space-x-4">
                   <Button
                     onClick={() => {
-                      const message = `Hello! I'm interested in ordering "${selectedProduct.name}" - Rp ${selectedProduct.price.toLocaleString()}. Can you help me with this order?`;
-                      const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+                      const message = `Halo FluvyveyyFlowers! Saya tertarik untuk memesan. "${selectedProduct.name}" - Rp ${selectedProduct.price.toLocaleString()}. Can you help me with this order?`;
+                      const whatsappUrl = `https://wa.me/62882007938488?text=${encodeURIComponent(message)}`;
                       window.open(whatsappUrl, '_blank');
                     }}
                     disabled={!selectedProduct.inStock}

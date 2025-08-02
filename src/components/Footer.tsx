@@ -6,7 +6,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Phone,
-      href: "https://wa.me/6281234567890",
+      href: "https://wa.me/62882007938488",
       label: "WhatsApp"
     },
     {
@@ -56,12 +56,12 @@ const Footer = () => {
               <span className="text-xl font-bold">FluvyveyyFlowers</span>
             </div>
             <p className="text-background/70 leading-relaxed">
-              Creating beautiful moments with fresh flowers and elegant arrangements for over a decade. 
-              Your trusted partner for all life's special occasions.
+              Menciptakan momen indah dengan bunga segar dan rangkaian bunga elegan selama lebih dari satu dekade.
+              Rekan tepercaya Anda untuk semua acara spesial dalam hidup.
             </p>
             <div className="flex items-center space-x-2 text-background/70">
               <MapPin className="w-4 h-4" />
-              <span className="text-sm">Jl. Bunga Mawar No. 123, Jakarta</span>
+              <span className="text-sm">Jl. Ahmad Yani,Gg. 2, Pesayangan, Kedungwuluh, Kec. Purwokerto Bar., Kabupaten Banyumas, Jawa Tengah 53152</span>
             </div>
           </div>
 
@@ -103,7 +103,7 @@ const Footer = () => {
                 <p>Sunday: 10AM-6PM</p>
               </div>
               <div className="text-background/70 text-sm">
-                <p>+62 812-3456-7890</p>
+                <p>+62 882-0079-38488</p>
                 <p>hello@fluvyveyyflowers.com</p>
               </div>
             </div>
