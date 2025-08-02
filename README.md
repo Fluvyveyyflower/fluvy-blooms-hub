@@ -52,3 +52,6 @@ npm run build
 # 4. Jalankan server development
 npm run dev
 ```
+---
+## Demo Aplikasi
+https://fluvyveyyflower.vercel.app/
