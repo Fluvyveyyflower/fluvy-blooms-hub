@@ -40,7 +40,7 @@
 ## Cara Install
 ```bash
 # 1. Clone repository
-git clone <YOUR_GIT_URL>
+git clone (https://github.com/Fluvyveyyflower/fluvy-blooms-hub.git)
 
 # 2. Masuk ke folder proyek
 cd fluvyveyyflowers
